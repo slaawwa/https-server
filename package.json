@@ -1,0 +1,31 @@
+{
+  "name": "https-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "backend/app",
+  "scripts": {
+    "backend:server": "babel-node backend/app",
+    "backend:dev": "nodemon --inspect -w backend -x \"npm run backend:server -- --inspect\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/node": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/register": "^7.0.0",
+    "hapi": "^17.6.0",
+    "nodemon": "^1.18.5"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ],
+    "plugins": []
+  },
+  "dependencies": {
+    "inert": "^5.1.1"
+  }
+}
