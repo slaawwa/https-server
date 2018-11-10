@@ -1,2 +1,7 @@
 
 node_modules/
+cnf/*.pem
+cnf/*.crt
+cnf/*.cst
+cnf/*.csr
+cnf/*.key
